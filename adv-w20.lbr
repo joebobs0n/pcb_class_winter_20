@@ -95,7 +95,10 @@
 <layer number="114" name="Badge_Outline" color="11" fill="1" visible="no" active="no"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -105,9 +108,17 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -299,7 +310,71 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <pad name="4" x="3.2512" y="-2.2606" drill="1.016" diameter="1.8796"/>
 <text x="-2.54" y="3.81" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
+<package name="SOP65P490X110-8N" urn="urn:adsk.eagle:footprint:17794364/1">
+<description>8-SOP, 0.65 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
+&lt;p&gt;8-pin SOP package with 0.65 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
+<circle x="-2.178" y="1.7249" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.5" y1="1.4749" x2="-1.5" y2="1.5" width="0.12" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.12" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="1.4749" width="0.12" layer="21"/>
+<wire x1="-1.5" y1="-1.4749" x2="-1.5" y2="-1.5" width="0.12" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.12" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="-1.4749" width="0.12" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.12" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.12" layer="51"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.12" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.12" layer="51"/>
+<smd name="1" x="-2.1045" y="0.975" dx="1.5028" dy="0.4919" layer="1"/>
+<smd name="2" x="-2.1045" y="0.325" dx="1.5028" dy="0.4919" layer="1"/>
+<smd name="3" x="-2.1045" y="-0.325" dx="1.5028" dy="0.4919" layer="1"/>
+<smd name="4" x="-2.1045" y="-0.975" dx="1.5028" dy="0.4919" layer="1"/>
+<smd name="5" x="2.1045" y="-0.975" dx="1.5028" dy="0.4919" layer="1"/>
+<smd name="6" x="2.1045" y="-0.325" dx="1.5028" dy="0.4919" layer="1"/>
+<smd name="7" x="2.1045" y="0.325" dx="1.5028" dy="0.4919" layer="1"/>
+<smd name="8" x="2.1045" y="0.975" dx="1.5028" dy="0.4919" layer="1"/>
+<text x="0" y="2.6099" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.135" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="TC26H" urn="urn:adsk.eagle:footprint:6240272/1" locally_modified="yes">
+<description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
+<wire x1="-0.889" y1="1.651" x2="0.889" y2="1.651" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="7.747" x2="1.016" y2="7.493" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.016" y1="7.493" x2="-0.762" y2="7.747" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-0.762" y1="7.747" x2="0.762" y2="7.747" width="0.1524" layer="21"/>
+<wire x1="0.889" y1="1.651" x2="0.889" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="2.032" x2="1.016" y2="7.493" width="0.1524" layer="21"/>
+<wire x1="-0.889" y1="1.651" x2="-0.889" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="2.032" x2="-0.889" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="2.032" x2="-1.016" y2="7.493" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="4.953" x2="-0.508" y2="4.572" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="4.572" x2="-0.508" y2="4.572" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="4.572" x2="0.508" y2="4.953" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="4.953" x2="0.508" y2="4.953" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="5.334" x2="0" y2="5.334" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="4.191" x2="0" y2="4.191" width="0.1524" layer="21"/>
+<wire x1="0" y1="4.191" x2="0" y2="3.683" width="0.1524" layer="21"/>
+<wire x1="0" y1="4.191" x2="0.508" y2="4.191" width="0.1524" layer="21"/>
+<wire x1="0" y1="5.334" x2="0" y2="5.842" width="0.1524" layer="21"/>
+<wire x1="0" y1="5.334" x2="0.508" y2="5.334" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="2.032" x2="0.889" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="0.889" y1="2.032" x2="-0.889" y2="2.032" width="0.1524" layer="21"/>
+<text x="-1.524" y="4.445" size="1.27" layer="25" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.524" y="4.445" size="1.27" layer="27" ratio="10" rot="R270" align="bottom-center">&gt;VALUE</text>
+<rectangle x1="0.3048" y1="1.016" x2="0.7112" y2="1.6002" layer="21"/>
+<rectangle x1="-0.7112" y1="1.016" x2="-0.3048" y2="1.6002" layer="21"/>
+<smd name="P$1" x="-0.762" y="0.3175" dx="0.889" dy="2.286" layer="1"/>
+<smd name="P$2" x="0.762" y="0.3175" dx="0.889" dy="2.286" layer="1"/>
+</package>
 </packages>
+<packages3d>
+<package3d name="SOP65P490X110-8N" urn="urn:adsk.eagle:package:17794190/1" type="model">
+<description>8-SOP, 0.65 mm pitch, 4.90 mm span, 3.00 X 3.00 X 1.10 mm body
+&lt;p&gt;8-pin SOP package with 0.65 mm pitch, 4.90 mm span with body size 3.00 X 3.00 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOP65P490X110-8N"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="L80-R">
 <pin name="RST" x="12.7" y="-2.54" visible="pin" length="short" function="dot" rot="R180"/>
@@ -422,6 +497,53 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-3.302" x2="1.27" y2="-3.302" width="0.254" layer="94"/>
 <wire x1="-0.635" y1="-4.064" x2="0.635" y2="-4.064" width="0.254" layer="94"/>
+</symbol>
+<symbol name="RTC">
+<pin name="X1" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="X2" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="VCC" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="GND" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<pin name="MFP" x="10.16" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SDA" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="8.89" size="1.27" layer="96" ratio="12">&gt;VALUE</text>
+<text x="-7.62" y="-11.43" size="1.27" layer="95" ratio="12" align="top-left">&gt;NAME</text>
+</symbol>
+<symbol name="XTAL">
+<wire x1="-1.905" y1="2.54" x2="-1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="1.905" x2="-0.635" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.905" x2="0.635" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.905" x2="0.635" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.635" y1="1.905" x2="-0.635" y2="1.905" width="0.254" layer="94"/>
+<text x="0" y="3.81" size="1.27" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="96" font="vector" rot="R180" align="bottom-center">&gt;VALUE</text>
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="Q">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -571,7 +693,59 @@ SMT- SWCH-08247</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MCP7940M">
+<gates>
+<gate name="G$1" symbol="RTC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-MSOP8" package="SOP65P490X110-8N">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="MFP" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="X1" pad="1"/>
+<connect gate="G$1" pin="X2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17794190/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XTAL">
+<gates>
+<gate name="G$1" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TC26H">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
